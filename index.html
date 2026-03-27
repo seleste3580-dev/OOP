@@ -39,6 +39,27 @@
     <main class="grid-container" id="lessonGrid">
         <!-- Lessons Injected via JS -->
     </main>
+	<!-- Lesson Modal Overlay -->
+<div id="lessonModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="printableArea">
+            <!-- This Header only shows on the PDF/Print -->
+            <div class="pdf-stamp">
+                <div class="stamp-logo">SELESTE TECHNOLOGIES</div>
+                <div class="stamp-verified">OFFICIAL CURRICULUM • VERIFIED CONTENT</div>
+            </div>
+            
+            <div id="modalBody">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button onclick="downloadPDF()" class="btn-pdf">📥 Download Official PDF</button>
+            <button onclick="copyCode()" class="btn-copy">📋 Copy Code Snippet</button>
+        </div>
+    </div>
+</div>
 
     <script src="script.js"></script>
 </body>
